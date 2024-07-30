@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+    /* ## Colors */
+    /* ### Primary */
+    --cor01: hsl(158, 36%, 37%);
+    --cor02: hsl(30, 38%, 92%);
+
+    /* ### Neutral */
+    --cor03: hsl(212, 21%, 14%);
+    --cor04: hsl(228, 12%, 48%);
+    --cor05: hsl(0, 0%, 100%);
+
+    /*## Typography */
+    --font01: "Montserrat", sans-serif;
+    --font02: "Fraunces", serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 96vh;
+    position: relative;
+
+    background-color: var(--cor02);
+}
+
+main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 290px;
+
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+}
+
+div.image {
+    height: 200px;
+    width: auto;
+
+    background: var(--cor02) url(../images/image-product-mobile.jpg) no-repeat;
+    background-size: cover;
+}
+
+article {
+    padding: 0px 20px;
+}
+
+h1 {
+    color: var(--cor04);
+    font-family: var(--font01);
+    font-weight: 500;
+    font-size: 0.65em;
+    letter-spacing: 3px;
+    margin: 20px 0px 10px 0px;
+}
+
+h2 {
+    font-family: var(--font02);
+}
+
+p {
+    color: var(--cor04);
+    font-family: var(--font01);
+    font-size: 0.75em;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 10px 0px 20px 0px;
+}
+
+strong {
+    display: inline-block;
+    color: var(--cor01);
+    font-family: var(--font02);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+span {
+    display: inline-block;
+    vertical-align: top;
+
+    color: var(--cor04);
+    font-family: var(--font01);
+    font-weight: 500;
+    font-size: 0.7em;
+    text-decoration: line-through;
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+button {
+    display: block;
+
+    color: white;
+    background-color: var(--cor01);
+    font-family: var(--font01);
+    font-weight: 600;
+    font-size: 0.75em;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+button::before {
+    content: " ";
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/icon-cart.svg);
+    padding-right: 10px;
+    vertical-align: top;
+}
