@@ -70,6 +70,7 @@ h1 {
 
 h2 {
     font-family: var(--font02);
+    font-size: 1.65em;
 }
 
 p {
@@ -99,7 +100,7 @@ span {
     font-size: 0.7em;
     text-decoration: line-through;
     padding-left: 15px;
-    padding-top: 7px;
+    padding-top: 7.5px;
 }
 
 button {
@@ -113,7 +114,7 @@ button {
     padding: 15px;
     width: 100%;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
 }
 
@@ -126,5 +127,9 @@ button::before {
     background-size: contain;
     background-image: url(../images/icon-cart.svg);
     padding-right: 10px;
-    vertical-align: top;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: hsl(158, 34%, 25%);
 }
